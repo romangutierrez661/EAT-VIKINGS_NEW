@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat Vikings - Restaurante</title>
+    
+    <!-- Optimización PageSpeed: Preconnect & Font Display -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="stylesheet" href="css/styles2.css">
+    <!-- Agrega esto en el <head> de index.html y nosotros.html -->
+<link rel="preload" as="image" href="img/hero.jpg" fetchpriority="high" >
+    
+    <!-- Carga diferida de FontAwesome para no bloquear el renderizado -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+</head>
+<body>
+
+    <!-- Menú Sticky con Botón de Hamburguesa para Celulares -->
+    <nav class="navbar-sticky">
+        <div class="nav-container">
+            <span class="nav-brand">EAT VIKINGS</span>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir Menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links" id="nav-links">
+    <a href="index.html" class="nav-link">Inicio</a>
+    <a href="nosotros.html" class="nav-link active">Nosotros</a>
+    <a href="#menu" class="nav-link">Menú</a>
+    <a href="#contacto" class="nav-link">Contacto</a>
+</div>
+        </div>
+    </nav>
+
+    <!-- Banner con ¿Quiénes somos? -->
+    <header class="hero-section hero-about">
+        <div class="hero-center">
+            <div class="logo-circle">
+                <img src="img/logo.png" alt="Eat Vikings Logo" loading="lazy">
+            </div>
+            <h1 class="brand-title">¿Quiénes Somos?</h1>
+            <p class="brand-subtitle">Conoce el origen, leyenda y pasión de Eat Vikings</p>
+        </div>
+    </header>
+
+    <!-- Divisor Difuminado -->
+    <div class="blur-wave-divider">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0 C150,90 350,-40 500,45 C650,130 900,10 1200,50 L1200,120 L0,120 Z"></path>
+        </svg>
+    </div>
+
+    <!-- Contenido Principal: Misión, Visión, Círculo Central y Valores -->
+    <section class="main-content">
+        <div class="content-container">
+
+            <p class="description-text">
+                Nacido de la pasión por las antiguas tradiciones nórdicas y los grandes banquetes comunitarios, <strong>Eat Vikings</strong> abrió sus puertas para ofrecer una experiencia gastronómica única e inmersiva.
+            </p>
+
+            <!-- Layout del Boceto: Misión - Círculo - Visión -->
+            <div class="mvv-layout">
+                <!-- Izquierda: Misión -->
+                <div class="mvv-box flex-left">
+                    <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Nuestra Misión</h3>
+                    <p>Servir banquetes abundantes y de alta calidad, honrando los sabores tradicionales del norte y creando momentos inolvidables de hermandad.</p>
+                </div>
+
+                <!-- Centro: Círculo (Sonrisas / Logo) -->
+                <div class="center-circle-container">
+                    <div class="center-circle">
+                        <img src="img/mascota.png" alt="Eat Vikings Logo" loading="lazy">
+                    </div>
+                    <span class="circle-label">Rey valhalla</span>
+                </div>
+
+                <!-- Derecha: Visión -->
+                <div class="mvv-box flex-right">
+                    <div class="card-icon"><i class="fas fa-eye"></i></div>
+                    <h3>Nuestra Visión</h3>
+                    <p>Ser el restaurante temático referente de la gastronomía y cultura nórdica en la región, uniendo a las familias en una mesa de leyenda.</p>
+                </div>
+
+                <!-- Abajo al Centro: Valores -->
+                <div class="mvv-box flex-center-bottom">
+                    <div class="card-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                    <h3>Nuestros Valores</h3>
+                    <p>Hospitalidad, abundancia, autenticidad, calidad artesanal y el trabajo en equipo como una verdadera hermandad vikinga.</p>
+                </div>
+            </div>
+
+            <!-- Sección Historia Extendida -->
+            <div class="history-section">
+                <h2 class="section-title">Nuestra Historia</h2>
+                <p class="history-intro">
+                    Lo que comenzó como una pequeña reunión alrededor del fuego para compartir carnes asadas y bebidas artesanales, se transformó en un refugio para todos los amantes del buen comer y la camaradería nórdica.
+                </p>
+
+                <div class="history-content">
+                    <div class="history-image-box">
+                        <img src="img/logo.png" alt="Logo Naturaleza Vikinga - Eat Vikings">
+                    </div>
+
+                    <div class="history-timeline">
+                        <div class="timeline-item">
+                            <span class="year-tag">1995 - 1996: La Chispa Inicial</span>
+                            <p>Surgieron los primeros experimentos gastronómicos marinando cortes de carne con especias tradicionales y técnicas de ahumado a fuego lento en fogatas al aire libre.</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="year-tag">2010 - 2015: El Primer Gran Salón</span>
+                            <p>Abrimos las puertas de nuestra primera taberna rústica. La calidez del fuego de leña y las jarras de hidromiel artesanal convirtieron nuestro espacio en el punto de encuentro favorito de la comunidad.</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="year-tag">2020: La Esencia de "Eat Vikings"</span>
+                            <p>Renovamos totalmente nuestro concepto dando vida a la marca <strong>Eat Vikings</strong>. Consolidamos una oferta gastronómica centrada en banquetes abundantes, la figura del Rey Valhalla y una atmósfera festiva e inmersiva.</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="year-tag">2026: Una Hermandad en Crecimiento</span>
+                            <p>Hoy seguimos creciendo con la misma pasión del primer día, sirviendo cortes de primer nivel, recetas secretas y sonrisas a cada guerrero que cruza nuestras puertas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SECCIÓN ORGANIGRAMA COMPLETO (13 INTEGRANTES EXACTOS) -->
+<div class="organigrama-section">
+    <h2 class="section-title">Organigrama</h2>
+    <p class="history-intro">Estructura jerárquica de 13 integrantes basada en la distribución del pizarrón.</p>
+
+    <!-- ESTRUCTURA PRINCIPAL SUPERIOR (8 INTEGRANTES) -->
+    <div class="board-tree-wrapper">
+        <div class="tree-root-node">
+            <div class="circle-root"></div>
+            <div class="v-line-top"></div>
+        </div>
+
+        <div class="h-line-broad"></div>
+
+        <div class="tree-grid-level1">
+            <!-- COLUMNA IZQUIERDA (2 INTEGRANTES) -->
+            <div class="tree-col">
+                <div class="v-line-connector"></div>
+                <!-- 1. Román -->
+                <div class="org-card-box">
+                    <div class="org-main-frame">
+                        <img src="img/foto.jpeg" alt="Román Gutiérrez" class="org-avatar-img">
+                        <div class="org-btn-email"><span class="badge-tag"><i class="fas fa-at"></i></span><div class="info-popup-email"><span class="popup-text">roman@eatvikings.com</span></div></div>
+                        <div class="org-btn-puesto"><span class="badge-tag">Puesto</span><div class="info-popup-puesto"><h4 class="popup-name">Román Gutiérrez</h4><span class="popup-role">Director General</span></div></div>
+                    </div>
+                </div>
+
+                <div class="sub-branch-left">
+                    <div class="L-line"></div>
+                    <!-- 2. Nicolas -->
+                    <div class="org-card-box">
+                        <div class="org-main-frame">
+                            <img src="img/nicolas.jpeg" alt="Nicolas Giles" class="org-avatar-img">
+                            <div class="org-btn-email"><span class="badge-tag"><i class="fas fa-at"></i></span><div class="info-popup-email"><span class="popup-text">nicolas@eatvikings.com</span></div></div>
+                            <div class="org-btn-puesto"><span class="badge-tag">Puesto</span><div class="info-popup-puesto"><h4 class="popup-name">Nicolas Giles</h4><span class="popup-role">Subdirector</span></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COLUMNA CENTRO (3 INTEGRANTES) -->
+            <div class="tree-col">
+                <div class="v-line-connector"></div>
+                <!-- 3. Marcos -->
+                <div class="org-card-box">
+                    <div class="org-main-frame">
+                        <img src="img/marcos.jpeg" alt="Marcos Arif" class="org-avatar-img">
+                        <div class="org-btn-email"><span class="badge-tag"><i class="fas fa-at"></i></span><div class="info-popup-email"><span class="popup-text">marcos@eatvikings.com</span></div></div>
+                        <div class="org-btn-puesto"><span class="badge-tag">Puesto</span><div class="info-popup-puesto"><h4 class="popup-name">Marcos Arif</h4><span class="popup-role">Gerente Operaciones</span></div></div>
+                    </div>
+                </div>
+
+                <div class="v-line-connector"></div>
+                <!-- 4. Enrique -->
+                <div class="org-card-box">
+                    <div class="org-main-frame">
+                        <img src="img/enrique.jpeg" alt="Enrique Becerril" class="org-avatar-img">
+                        <div class="org-btn-email"><span class="badge-tag"><i class="fas fa-at"></i></span><div class="info-popup-email"><span class="popup-text">enrique@eatvikings.com</span></div></div>
+                        <div class="org-btn-puesto"><span class="badge-tag">Puesto</span><div class="info-popup-puesto"><h4 class="popup-name">Enrique Becerril</h4><span class="popup-role">Chef Ejecutivo</span></div></div>
+                    </div>
+                </div>
+
+                <div class="v-line-connector"></div>
+                <!-- 5. Luis -->
+                <div class="org-card-box">
+                    <div class="org-main-frame">
+                        <img src="img/luis.jpeg" alt="Luis Joaquin" class="org-avatar-img">
+                        <div class="org-btn-email"><span class="badge-tag"><i class="fas fa-at"></i></span><div class="info-popup-email"><span class="popup-text">luis@eatvikings.com</span></div></div>
+                        <div class="org-btn-puesto"><span class="badge-tag">Puesto</span><div class="info-popup-puesto"><h4 class="popup-name">Luis Joaquin</h4><span class="popup-role">Parrillero</span></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COLUMNA DERECHA (3 INTEGRANTES) -->
+            <div class="tree-col">
+                <div class="v-line-connector"></div>
+                <!-- 6. Estefania -->
+                <div class="org-card-box">
+                    <div class="org-main-frame">
+                        <img src="img/fanny.jpeg" alt="Estefania Asseneth" class="org-avatar-img">
+                        <div class="org-btn-email"><span class="badge-tag"><i class="fas fa-at"></i></span><div class="info-popup-email"><span class="popup-text">estefania@eatvikings.com</span></div></div>
+                        <div class="org-btn-puesto"><span class="badge-tag">Puesto</span><div class="info-popup-puesto"><h4 class="popup-name">Estefania Asseneth</h4><span class="popup-role">Recursos Humanos</span></div></div>
+                    </div>
+                </div>
+
+                <div class="v-line-connector"></div>
+                <!-- 7. Juan -->
+                <div class="org-card-box">
+                    <div class="org-main-frame">
+                        <img src="img/juan.jpeg" alt="Juan Ocampo" class="org-avatar-img">
+                        <div class="org-btn-email"><span class="badge-tag"><i class="fas fa-at"></i></span><div class="info-popup-email"><span class="popup-text">juan@eatvikings.com</span></div></div>
+                        <div class="org-btn-puesto"><span class="badge-tag">Puesto</span><div class="info-popup-puesto"><h4 class="popup-name">Juan Ocampo</h4><span class="popup-role">Marketing</span></div></div>
+                    </div>
+                </div>
+
+                <div class="v-line-connector"></div>
+                <!-- 8. Eder -->
+                <div class="org-card-box">
+                    <div class="org-main-frame">
+                        <img src="img/eder.jpeg" alt="Eder" class="org-avatar-img">
+                        <div class="org-btn-email"><span class="badge-tag"><i class="fas fa-at"></i></span><div class="info-popup-email"><span class="popup-text">eder@eatvikings.com</span></div></div>
+                        <div class="org-btn-puesto"><span class="badge-tag">Puesto</span><div class="info-popup-puesto"><h4 class="popup-name">Eder</h4><span class="popup-role">Reservas</span></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ESTRUCTURA INFERIOR DEL PIZARRÓN (5 INTEGRANTES) -->
+    <div class="board-lower-wrapper">
+        <div class="v-divider-line"></div>
+
+        <!-- 9. Eduardo (Principal inferior con modal) -->
+        <div class="org-card-box leader-card">
+            <div class="org-main-frame">
+                <img src="img/eduardo.jpeg" alt="Eduardo Garcia" class="org-avatar-img">
+                <div class="org-btn-email"><span class="badge-tag"><i class="fas fa-at"></i></span><div class="info-popup-email"><span class="popup-text">eduardo@eatvikings.com</span></div></div>
+                <div class="org-btn-puesto"><span class="badge-tag">Puesto</span><div class="info-popup-puesto"><h4 class="popup-name">Eduardo Garcia</h4><span class="popup-role">Sommelier Hidromiel</span></div></div>
+            </div>
+        </div>
+
+        <div class="v-line-connector"></div>
+
+        <div class="lower-split-container">
+            <!-- Pila de 3 tarjetas a la izquierda -->
+            <div class="lower-left-column">
+                <!-- 10. Eros -->
+                <div class="org-card-box">
+                    <div class="org-main-frame">
+                        <img src="img/eros.jpeg" alt="Eros Ramses" class="org-avatar-img">
+                        <div class="org-btn-email"><span class="badge-tag"><i class="fas fa-at"></i></span><div class="info-popup-email"><span class="popup-text">eros@eatvikings.com</span></div></div>
+                        <div class="org-btn-puesto"><span class="badge-tag">Puesto</span><div class="info-popup-puesto"><h4 class="popup-name">Eros Ramses</h4><span class="popup-role">Supervisor Calidad</span></div></div>
+                    </div>
+                </div>
+
+                <div class="v-line-connector"></div>
+
+                <!-- 11. Carmen -->
+                <div class="org-card-box">
+                    <div class="org-main-frame">
+                        <img src="img/mafer.jpeg" alt="Carmen Barajas" class="org-avatar-img">
+                        <div class="org-btn-email"><span class="badge-tag"><i class="fas fa-at"></i></span><div class="info-popup-email"><span class="popup-text">carmen@eatvikings.com</span></div></div>
+                        <div class="org-btn-puesto"><span class="badge-tag">Puesto</span><div class="info-popup-puesto"><h4 class="popup-name">Carmen Barajas</h4><span class="popup-role">Jefa Finanzas</span></div></div>
+                    </div>
+                </div>
+
+                <div class="v-line-connector"></div>
+
+                <!-- 12. Ismael -->
+                <div class="org-card-box">
+                    <div class="org-main-frame">
+                        <img src="img/ismael.jpeg" alt="Ismael Flores" class="org-avatar-img">
+                        <div class="org-btn-email"><span class="badge-tag"><i class="fas fa-at"></i></span><div class="info-popup-email"><span class="popup-text">ismael@eatvikings.com</span></div></div>
+                        <div class="org-btn-puesto"><span class="badge-tag">Puesto</span><div class="info-popup-puesto"><h4 class="popup-name">Ismael Flores</h4><span class="popup-role">Diseñador Temático</span></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Línea conectora horizontal -->
+            <div class="h-line-connector"></div>
+
+            <!-- Tarjeta individual a la derecha -->
+            <div class="lower-right-column">
+                <!-- 13. Angel -->
+                <div class="org-card-box">
+                    <div class="org-main-frame">
+                        <img src="img/angel.jpeg" alt="Angel" class="org-avatar-img">
+                        <div class="org-btn-email"><span class="badge-tag"><i class="fas fa-at"></i></span><div class="info-popup-email"><span class="popup-text">angel@eatvikings.com</span></div></div>
+                        <div class="org-btn-puesto"><span class="badge-tag">Puesto</span><div class="info-popup-puesto"><h4 class="popup-name">Angel</h4><span class="popup-role">Compras</span></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-circle-end"></div>
+    </div>
+</div>
+
+
+            <!-- Círculo terminal inferior -->
+            <div class="bottom-node-circle"></div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Eat Vikings. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+    // Código para abrir/cerrar el menú desplegable en celular
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            const icon = menuToggle.querySelector('i');
+            if (navLinks.classList.contains('open')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
